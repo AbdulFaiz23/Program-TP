@@ -146,39 +146,39 @@
 
 
 
-<section id="ourstory" class="ftco-about d-md-flex">
-      <div class="one-half img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/about.jpg') ?>);"></div>
+<section id="ourstory" class="ftco-about d-md-flex"> 
+  <div class="one-half img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/about.jpg') ?>);"></div>
 
-      <div class="one-half ftco-animate">
-        <div class="overlap">
+  <div class="one-half ftco-animate">
+    <div class="overlap">
 
-          <div class="heading-section ftco-animate">
-            <span class="subheading">Discover</span>
-            <h2 class="mb-4">Our Story</h2>
-          </div>
-
-          <div>
-            <p>
-              Kopi Joss lahir dari tradisi angkringan Yogyakarta yang unik dan penuh cerita.  
-              Dengan cita rasa khas yang menghadirkan sensasi hangat, wangi, dan otentik,  
-              Kopi Joss menjadi simbol kehangatan dan kreativitas dalam menikmati kopi.
-            </p>
-
-            <p>
-              Kami membawa pengalaman tersebut ke konsep modern — memungkinkan setiap pelanggan  
-              meracik kopi sesuai selera, memilih biji terbaik, menentukan tingkat roasting,  
-              hingga menambah topping khas seperti arang panas, gula Jawa, susu, atau rempah pilihan.
-            </p>
-
-            <p>
-              Setiap gelas Kopi Joss bukan hanya minuman, tetapi pengalaman penuh aroma dan cerita.
-            </p>
-
-          </div>
-
-        </div>
+      <div class="heading-section ftco-animate">
+        <span class="subheading">Discover</span>
+        <h2 class="mb-4">Our Story</h2>
       </div>
+
+      <div>
+        <p>
+          Kopi Joss lahir dari tradisi angkringan Yogyakarta yang unik dan penuh cerita.  
+          Dengan cita rasa khas yang menghadirkan sensasi hangat, wangi, dan otentik,  
+          Kopi Joss menjadi simbol kehangatan dan kreativitas dalam menikmati kopi.
+        </p>
+
+        <p>
+          Kami membawa pengalaman tersebut ke konsep modern — memungkinkan setiap pelanggan  
+          meracik kopi sesuai selera, memilih biji terbaik, menentukan tingkat roasting,  
+          hingga menambah topping khas seperti arang panas, gula Jawa, susu, atau rempah pilihan.
+        </p>
+
+        <p>
+          Setiap gelas Kopi Joss bukan hanya minuman, tetapi pengalaman penuh aroma dan cerita.
+        </p>
+      </div>
+
+    </div>
+  </div>
 </section>
+
 
 
 
