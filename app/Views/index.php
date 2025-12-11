@@ -1,31 +1,7 @@
 <?= $this->extend('layout') ?>
 <?= $this->section('content') ?>
 
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-      <a class="navbar-brand" href="<?= base_url() ?>">Coffee<small>JOSS</small></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
-      </button>
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="<?= base_url() ?>" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="<?= base_url('menu') ?>" class="nav-link">Menu</a></li>
-          <li class="nav-item"><a href="<?= base_url('about') ?>" class="nav-link">About</a></li>
-          <li class="nav-item dropdown">
-              <div class="dropdown-menu" aria-labelledby="dropdown04">
-                <a class="dropdown-item" href="<?= base_url('shop') ?>">Shop</a>
-                <a class="dropdown-item" href="<?= base_url('product-single') ?>">Single Product</a>
-                <a class="dropdown-item" href="<?= base_url('room') ?>">Cart</a>
-                <a class="dropdown-item" href="<?= base_url('checkout') ?>">Checkout</a>
-              </div>
-            </li>
-          <li class="nav-item"><a href="<?= base_url('contact') ?>" class="nav-link">Contact</a></li>
-          <li class="nav-item cart"><a href="<?= base_url('cart') ?>" class="nav-link"><span class="icon icon-shopping_cart"></span><span class="bag d-flex justify-content-center align-items-center"><small>1</small></span></a></li>
-        </ul>
-      </div>
-    </div>
-</nav>
+
 
 <section class="home-slider owl-carousel">
       <div class="slider-item" style="background-image: url(<?= base_url('coffee1-gh-pages/images/bg_1.jpg') ?>);">
@@ -37,8 +13,10 @@
               <span class="subheading">Kopi Joss</span>
               <h1 class="mb-4">Nikmati Sensasi Kopi dengan Racikan Sesukamu</h1>
               <p class="mb-4 mb-md-5">Pilih biji kopi, tentukan tingkat roasting, dan racik sesuai gaya kamu. Kopi Joss memberikan pengalaman meracik kopi sendiri yang unik dan autentik.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Racik Sekarang</a> 
-              <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Lihat Menu</a></p>
+              <p>
+                <a href="<?= base_url('racik') ?>" class="btn btn-primary p-3 px-xl-4 py-xl-3">Racik Sekarang</a> 
+                <a href="<?= base_url('menu') ?>" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Lihat Menu</a>
+              </p>
             </div>
 
           </div>
@@ -54,8 +32,10 @@
               <span class="subheading">Kopi Joss</span>
               <h1 class="mb-4">Rasa Otentik Jawa dengan Sentuhan Modern</h1>
               <p class="mb-4 mb-md-5">Dibuat dari biji kopi pilihan khas Nusantara. Setiap tegukan menghadirkan cita rasa khas yang kuat, wangi, dan mantap.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Coba Sekarang</a> 
-              <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Lihat Menu</a></p>
+              <p>
+                <a href="<?= base_url('racik') ?>" class="btn btn-primary p-3 px-xl-4 py-xl-3">Coba Sekarang</a> 
+                <a href="<?= base_url('menu') ?>" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Lihat Menu</a>
+              </p>
             </div>
 
           </div>
@@ -71,14 +51,17 @@
               <span class="subheading">Kopi Joss</span>
               <h1 class="mb-4">Hangat, Nikmat, dan Siap Diracik Sesuai Selera</h1>
               <p class="mb-4 mb-md-5">Tambahkan gula, susu, arang panas, atau topping favoritmu. Buat kopi dengan karakter sesuai jiwamu.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Buat Versimu</a> 
-              <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Lihat Menu</a></p>
+              <p>
+                <a href="<?= base_url('racik') ?>" class="btn btn-primary p-3 px-xl-4 py-xl-3">Buat Versimu</a> 
+                <a href="<?= base_url('menu') ?>" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Lihat Menu</a>
+              </p>
             </div>
 
           </div>
         </div>
       </div>
 </section>
+
 
 <section class="ftco-intro">
       <div class="container-wrap">
@@ -155,6 +138,7 @@
         </div>
       </div>
 </section>
+
 
 
 <section class="ftco-about d-md-flex">
