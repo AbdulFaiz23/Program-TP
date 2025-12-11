@@ -150,7 +150,7 @@
             <h2 class="mb-4">Our Story</h2>
           </div>
           <div>
-            <p>On her way she met a copy...</p>
+            <p>On her way she met a copy........................</p>
           </div>
         </div>
       </div>
