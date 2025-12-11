@@ -7,3 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/menu', 'MenuController::index');
+$routes->get('/menu', 'MenuController::index');
+$routes->get('/menuraciksendiri', 'MenuRacikController::index');

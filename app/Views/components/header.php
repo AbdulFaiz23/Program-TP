@@ -9,7 +9,16 @@
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="<?= base_url('/') ?>" class="nav-link">Home</a></li>
 
-	          <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+	          <!-- DROPDOWN MENU -->
+          <li class="nav-item dropdown <?= (service('uri')->getSegment(1) == 'menu' ? 'active' : '') ?>">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </a>
+            <div class="dropdown-menu" aria-labelledby="menuDropdown">
+              <a class="dropdown-item" href="<?= base_url('menu') ?>">Menu yang sudah ada</a>
+              <a class="dropdown-item" href="<?= base_url('menuraciksendiri') ?>">Menu racik sendiri</a>
+            </div>
+          </li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	          <li class="nav-item dropdown">
               
