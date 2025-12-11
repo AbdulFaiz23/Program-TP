@@ -34,10 +34,11 @@
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
-              <span class="subheading">Welcome</span>
-              <h1 class="mb-4">The Best Coffee Testing Experience</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+              <span class="subheading">Kopi Joss</span>
+              <h1 class="mb-4">Nikmati Sensasi Kopi dengan Racikan Sesukamu</h1>
+              <p class="mb-4 mb-md-5">Pilih biji kopi, tentukan tingkat roasting, dan racik sesuai gaya kamu. Kopi Joss memberikan pengalaman meracik kopi sendiri yang unik dan autentik.</p>
+              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Racik Sekarang</a> 
+              <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Lihat Menu</a></p>
             </div>
 
           </div>
@@ -50,10 +51,11 @@
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
-              <span class="subheading">Welcome</span>
-              <h1 class="mb-4">Amazing Taste &amp; Beautiful Place</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+              <span class="subheading">Kopi Joss</span>
+              <h1 class="mb-4">Rasa Otentik Jawa dengan Sentuhan Modern</h1>
+              <p class="mb-4 mb-md-5">Dibuat dari biji kopi pilihan khas Nusantara. Setiap tegukan menghadirkan cita rasa khas yang kuat, wangi, dan mantap.</p>
+              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Coba Sekarang</a> 
+              <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Lihat Menu</a></p>
             </div>
 
           </div>
@@ -66,10 +68,11 @@
           <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
 
             <div class="col-md-8 col-sm-12 text-center ftco-animate">
-              <span class="subheading">Welcome</span>
-              <h1 class="mb-4">Creamy Hot and Ready to Serve</h1>
-              <p class="mb-4 mb-md-5">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Order Now</a> <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">View Menu</a></p>
+              <span class="subheading">Kopi Joss</span>
+              <h1 class="mb-4">Hangat, Nikmat, dan Siap Diracik Sesuai Selera</h1>
+              <p class="mb-4 mb-md-5">Tambahkan gula, susu, arang panas, atau topping favoritmu. Buat kopi dengan karakter sesuai jiwamu.</p>
+              <p><a href="#" class="btn btn-primary p-3 px-xl-4 py-xl-3">Buat Versimu</a> 
+              <a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Lihat Menu</a></p>
             </div>
 
           </div>
@@ -86,24 +89,24 @@
               <div class="col-md-4 d-flex ftco-animate">
                 <div class="icon"><span class="icon-phone"></span></div>
                 <div class="text">
-                  <h3>000 (123) 456 7890</h3>
-                  <p>A small river named Duden flows by their place and supplies.</p>
+                  <h3>0812-3456-7890</h3>
+                  <p>Hubungi kami untuk pemesanan Kopi Joss racik sendiri, tersedia setiap hari.</p>
                 </div>
               </div>
 
               <div class="col-md-4 d-flex ftco-animate">
                 <div class="icon"><span class="icon-my_location"></span></div>
                 <div class="text">
-                  <h3>198 West 21th Street</h3>
-                  <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                  <h3>Kedai Kopi Joss</h3>
+                  <p>Jl. Angkringan No. 21, Kota Yogyakarta – Pusat Kopi Joss Asli.</p>
                 </div>
               </div>
 
               <div class="col-md-4 d-flex ftco-animate">
                 <div class="icon"><span class="icon-clock-o"></span></div>
                 <div class="text">
-                  <h3>Open Monday-Friday</h3>
-                  <p>8:00am - 9:00pm</p>
+                  <h3>Buka Setiap Hari</h3>
+                  <p>08:00 - 22:00 • Racik Kopi Sesuai Seleramu.</p>
                 </div>
               </div>
 
@@ -111,39 +114,39 @@
           </div>
 
           <div class="book p-4">
-            <h3>Book a Table</h3>
+            <h3>Booking Meja</h3>
             <form action="#" class="appointment-form">
               <div class="d-md-flex">
                 <div class="form-group">
-                  <input type="text" class="form-control" placeholder="First Name">
+                  <input type="text" class="form-control" placeholder="Nama Depan">
                 </div>
                 <div class="form-group ml-md-4">
-                  <input type="text" class="form-control" placeholder="Last Name">
+                  <input type="text" class="form-control" placeholder="Nama Belakang">
                 </div>
               </div>
               <div class="d-md-flex">
                 <div class="form-group">
                   <div class="input-wrap">
                     <div class="icon"><span class="ion-md-calendar"></span></div>
-                    <input type="text" class="form-control appointment_date" placeholder="Date">
+                    <input type="text" class="form-control appointment_date" placeholder="Tanggal">
                   </div>
                 </div>
                 <div class="form-group ml-md-4">
                   <div class="input-wrap">
                     <div class="icon"><span class="ion-ios-clock"></span></div>
-                    <input type="text" class="form-control appointment_time" placeholder="Time">
+                    <input type="text" class="form-control appointment_time" placeholder="Waktu">
                   </div>
                 </div>
                 <div class="form-group ml-md-4">
-                  <input type="text" class="form-control" placeholder="Phone">
+                  <input type="text" class="form-control" placeholder="Nomor Telepon">
                 </div>
               </div>
               <div class="d-md-flex">
                 <div class="form-group">
-                  <textarea cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
+                  <textarea cols="30" rows="2" class="form-control" placeholder="Pesan / Permintaan Khusus"></textarea>
                 </div>
                 <div class="form-group ml-md-4">
-                  <input type="submit" value="Appointment" class="btn btn-white py-3 px-4">
+                  <input type="submit" value="Pesan Sekarang" class="btn btn-white py-3 px-4">
                 </div>
               </div>
             </form>
@@ -152,6 +155,7 @@
         </div>
       </div>
 </section>
+
 
 <section class="ftco-about d-md-flex">
       <div class="one-half img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/about.jpg') ?>);"></div>
