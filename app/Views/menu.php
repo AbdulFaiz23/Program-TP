@@ -69,7 +69,7 @@
       <!-- 5 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-5.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi tubruk.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Kopi Tubruk Nusantara</h3>
             <p>Kopi tubruk tradisional dengan rasa pekat dan autentik.</p>
@@ -82,7 +82,7 @@
       <!-- 6 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-6.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi luwak.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Kopi Luwak Blend</h3>
             <p>Campuran kopi premium dengan aroma halus dan karakter kuat.</p>
@@ -95,9 +95,9 @@
       <!-- 7 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-7.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi blitar.webp') ?>);"></a>
           <div class="text pt-4">
-            <h3>Kopi Arabica Karanganyar</h3>
+            <h3>Kopi Arabica Blitar</h3>
             <p>Wangi lembut dengan tingkat keasaman seimbang.</p>
             <p class="price"><span>Rp 18.000</span></p>
             <p><a href="#" class="btn btn-primary btn-outline-primary">Tambah</a></p>
@@ -108,7 +108,7 @@
       <!-- 8 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-8.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi temanggung.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Kopi Robusta Temanggung</h3>
             <p>Karakter bold dan pahit nikmat, cocok bagi pecinta kopi kuat.</p>
@@ -121,7 +121,7 @@
       <!-- 9 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-9.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/es kopi susu.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Es Kopi Susu Joss</h3>
             <p>Versi dingin dari kopi joss dengan susu gurih dan tekstur creamy.</p>
@@ -134,7 +134,7 @@
       <!-- 10 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-10.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi caramel.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Caramel Joss Latte</h3>
             <p>Latte manis dengan sentuhan smoky khas arang joss.</p>
@@ -147,7 +147,7 @@
       <!-- 11 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-11.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi mocha.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Mocha Kopi Joss</h3>
             <p>Campuran coklat premium dengan kopi panas penuh aroma.</p>
@@ -160,7 +160,7 @@
       <!-- 12 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-12.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi hazelnut.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Hazelnut Joss Blend</h3>
             <p>Kombinasi hazelnut manis dengan karakter smoky joss.</p>
@@ -173,7 +173,7 @@
       <!-- 13 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-13.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi vanilla.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Vanilla Sweet Coffee</h3>
             <p>Kopi manis dengan aroma vanilla lembut.</p>
@@ -186,7 +186,7 @@
       <!-- 14 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-14.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi hitam.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Es Kopi Hitam Joss</h3>
             <p>Kopi hitam dingin dengan rasa pahit dan smokey khas.</p>
@@ -199,7 +199,7 @@
       <!-- 15 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-15.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi affogato.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Affogato Joss</h3>
             <p>Es krim vanilla disiram espresso joss panas.</p>
@@ -212,7 +212,7 @@
       <!-- 16 -->
       <div class="col-md-3 text-center ftco-animate">
         <div class="menu-entry">
-          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-16.jpg') ?>);"></a>
+          <a class="img" style="background-image: url(<?= base_url('coffee1-gh-pages/images/kopi matcha.webp') ?>);"></a>
           <div class="text pt-4">
             <h3>Matcha Coffee Fusion</h3>
             <p>Perpaduan matcha dan kopi joss yang unik dan creamy.</p>
