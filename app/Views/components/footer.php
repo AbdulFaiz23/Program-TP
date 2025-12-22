@@ -1,4 +1,4 @@
-<footer class="ftco-footer ftco-section img">
+<footer class="ftco-footer ftco-section img" id="footer">
   <div class="overlay"></div>
   <div class="container">
     <div class="row mb-5">

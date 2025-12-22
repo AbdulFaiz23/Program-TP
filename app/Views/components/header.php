@@ -1,7 +1,7 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light w-100" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="<?= base_url('/') ?>">Coffee<small>JOSS</small></a>
+      <a class="navbar-brand" href="#booking">Coffee<small>JOSS</small></a>
       
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
@@ -11,12 +11,15 @@
         <ul class="navbar-nav ml-auto">
           
           <li class="nav-item">
-            <a href="<?= base_url('/') ?>" class="nav-link">Home</a>
+            <a href="/" class="nav-link">Home</a>
           </li>
-
+          
+          <li class="nav-item">
+            <a href="#ourstory" class="nav-link">About</a>
+        </li>
           <!-- DROPDOWN MENU -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="#menu" id="menuDropdown" role="button" data-toggle="dropdown">
               Menu
             </a>
             <div class="dropdown-menu">
@@ -26,11 +29,11 @@
           </li>
 
           <li class="nav-item">
-    <a href="#ourstory" class="nav-link">About</a>
-</li>
+            <a href="#BestSeller" class="nav-link">Best Seller</a>
+        </li>
 
           <li class="nav-item">
-           <a href="<?= base_url('/') ?>#booking" class="nav-link">Contact</a>
+           <a href="<?= base_url('/') ?>#footer" class="nav-link">Contact</a>
           </li>
 
           <li class="nav-item cart">

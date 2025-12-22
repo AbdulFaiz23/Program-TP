@@ -46,6 +46,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
+  scroll-behavior: smooth;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 @-ms-viewport {
@@ -62,7 +63,10 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #fff; 
+  width: 100vw;
+  height: 100vh;
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -193,9 +197,6 @@ caption {
 th {
   text-align: inherit; }
 
-label {
-  display: inline-block;
-  margin-bottom: 0.5rem; }
 
 button {
   border-radius: 0; }
@@ -7524,15 +7525,19 @@ h1, h2, h3, h4, h5,
     letter-spacing: 5px; }
 
 .owl-carousel {
-  position: relative; }
-  .owl-carousel .owl-item {
-    opacity: .4; }
-    .owl-carousel .owl-item.active {
-      opacity: 1; }
-  .owl-carousel .owl-nav {
+  position: relative;
+ }
+.owl-carousel .owl-item {
+    opacity: .4; 
+}
+.owl-carousel .owl-item.active {
+      opacity: 1;
+}
+.owl-carousel .owl-nav {
     position: absolute;
     top: 50%;
-    width: 100%; }
+    width: 100%; 
+}
     .owl-carousel .owl-nav .owl-prev,
     .owl-carousel .owl-nav .owl-next {
       position: absolute;
@@ -7760,45 +7765,10 @@ h1, h2, h3, h4, h5,
       border-color: #000;
       color: #fff; }
 
-@media (min-width: 992px) {
-  .ftco-intro {
-    margin-top: -130px; } }
-
-.ftco-intro .container-wrap {
-  z-index: 2 !important;
-  position: relative; }
-
-.ftco-intro .wrap {
-  width: 100%; }
-  .ftco-intro .wrap .info {
-    background: #000;
-    padding: 30px; }
-    @media (min-width: 1200px) {
-      .ftco-intro .wrap .info {
-        width: calc(100% - 35%);
-        padding: 2% 5% 2% 12%; } }
-    @media (max-width: 767.98px) {
-      .ftco-intro .wrap .info {
-        width: 100%; } }
-    .ftco-intro .wrap .info p {
-      margin-bottom: 0; }
-  .ftco-intro .wrap .book {
-    width: 35%;
-    background: #c49b63; }
-    @media (max-width: 767.98px) {
-      .ftco-intro .wrap .book {
-        width: 100%; } }
-    .ftco-intro .wrap .book h3 {
-      text-transform: uppercase; }
-  .ftco-intro .wrap h3 {
-    font-size: 16px; }
-  .ftco-intro .wrap .text {
-    width: calc(100% - 40px); }
-  .ftco-intro .wrap .icon {
-    width: 40px; }
-    .ftco-intro .wrap .icon span {
-      color: #c49b63;
-      font-size: 20px; }
+      .info{
+        height: 300px;
+        display: flex;
+      }
 
 .ftco-about .one-half {
   width: 100%;
@@ -8248,59 +8218,7 @@ h1, h2, h3, h4, h5,
   .appointment h3 {
     color: #fff; }
 
-.appointment-form .form-group {
-  position: relative;
-  width: 100%;
-  display: block; }
-  .appointment-form .form-group .icon {
-    position: absolute;
-    top: 50% !important;
-    right: 0;
-    font-size: 14px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
-    .appointment-form .form-group .icon span {
-      color: white !important; }
-  .appointment-form .form-group .select-wrap, .appointment-form .form-group .input-wrap {
-    position: relative; }
-    .appointment-form .form-group .select-wrap select, .appointment-form .form-group .input-wrap select {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none; }
-  .appointment-form .form-group .btn {
-    width: 100%;
-    display: block !important; }
 
-.appointment-form .form-control {
-  border: transparent !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-  height: 58px !important;
-  padding-left: 0;
-  padding-right: 0;
-  background: transparent !important;
-  color: rgba(255, 255, 255, 0.9) !important;
-  font-size: 13px;
-  border-radius: 0px;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important; }
-  .appointment-form .form-control::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: rgba(255, 255, 255, 0.9); }
-  .appointment-form .form-control::-moz-placeholder {
-    /* Firefox 19+ */
-    color: rgba(255, 255, 255, 0.9); }
-  .appointment-form .form-control:-ms-input-placeholder {
-    /* IE 10+ */
-    color: rgba(255, 255, 255, 0.9); }
-  .appointment-form .form-control:-moz-placeholder {
-    /* Firefox 18- */
-    color: rgba(255, 255, 255, 0.9); }
-  .appointment-form .form-control:focus, .appointment-form .form-control:active {
-    border-color: #fff; }
-
-.appointment-form textarea.form-control {
-  height: inherit !important; }
 
 .staff {
   padding: 25px;

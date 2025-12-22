@@ -1,9 +1,7 @@
 <?= $this->extend('layout') ?>
 <?= $this->section('content') ?>
 
-
-
-<section class="home-slider owl-carousel">
+<section class="home-slider owl-carousel" >
       <div class="slider-item" style="background-image: url(<?= base_url('coffee1-gh-pages/images/bg_1.jpg') ?>);">
         <div class="overlay"></div>
         <div class="container">
@@ -65,81 +63,42 @@
 
 <section class="ftco-intro" id="booking">
     <div class="container-wrap">
-        <div class="wrap d-md-flex align-items-xl-end">
+        <div class="container-wrap w-100 d-flex align-items-xl-end">
 
-            <div class="info">
-                <div class="row no-gutters">
-
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="icon"><span class="icon-phone"></span></div>
-                        <div class="text">
-                            <h3>0812-3456-7890</h3>
-                            <p>Hubungi kami untuk pemesanan Kopi Joss racik sendiri, tersedia setiap hari.</p>
+            <div class="info w-100 pt-5">
+                <div class="w-100">
+                    <form action="#" class="w-100 bg-black d-flex flex-column">
+                    <h1 class="text-center">BOOKING MEJA</h1>
+                    <div class="d-flex flex-row w-100 justify-content-around">
+                        <div class="d-flex flex-column w-25">
+                            <label for="nama depan" class="fw-bolder fs-1 text-white">nama depan
+                                </label>
+                                <input type="text" class="" id="nama depan" placeholder="Nama Depan">
+                            <label for="nama belakang" class="fw-bolder fs-1 text-white">nama belakang
+                                </label>
+                                <input type="text" class="" id="nama belakang" placeholder="Nama Belakang">
                         </div>
-                    </div>
-
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="icon"><span class="icon-my_location"></span></div>
-                        <div class="text">
-                            <h3>Kedai Kopi Joss</h3>
-                            <p>Jl. Angkringan No. 21, Kota Yogyakarta – Pusat Kopi Joss Asli.</p>
+                        <div class="d-flex flex-column">
+                            <label for="appointment_date" class="fw-bolder fs-1 text-white"">tanggal             
+                        </label>
+                        <input type="text" class=" appointment_date" id="appointment_date" placeholder="Tanggal">
+                            <label for="appointment_time"class="fw-bolder fs-1 text-white">waktu
+                                </label>
+                                <input type="text" class=" appointment_time" id="appointment_time" placeholder="Waktu">           
                         </div>
-                    </div>
-
-                    <div class="col-md-4 d-flex ftco-animate">
-                        <div class="icon"><span class="icon-clock-o"></span></div>
-                        <div class="text">
-                            <h3>Buka Setiap Hari</h3>
-                            <p>08:00 - 22:00 • Racik Kopi Sesuai Seleramu.</p>
+                        <div class="d-flex flex-column g-5 w-25">
+                            <label for="notel" class="fw-bolder fs-1 text-white">nomor telepon</label>
+                            <input type="text" class="" id="notel" placeholder="Nomor Telepon">
+                            <label for="pesan" class="fw-bolder fs-1 text-white">Pesan</label>
+                            <textarea cols="30" rows="1" class=""id="pesan" placeholder="Pesan / Permintaan Khusus"></textarea>
                         </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="book p-4">
-                <h3>Booking Meja</h3>
-                <form action="#" class="appointment-form">
-                    <div class="d-md-flex">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nama Depan">
-                        </div>
-                        <div class="form-group ml-md-4">
-                            <input type="text" class="form-control" placeholder="Nama Belakang">
-                        </div>
-                    </div>
-
-                    <div class="d-md-flex">
-                        <div class="form-group">
-                            <div class="input-wrap">
-                                <div class="icon"><span class="ion-md-calendar"></span></div>
-                                <input type="text" class="form-control appointment_date" placeholder="Tanggal">
-                            </div>
-                        </div>
-
-                        <div class="form-group ml-md-4">
-                            <div class="input-wrap">
-                                <div class="icon"><span class="ion-ios-clock"></span></div>
-                                <input type="text" class="form-control appointment_time" placeholder="Waktu">
-                            </div>
-                        </div>
-
-                        <div class="form-group ml-md-4">
-                            <input type="text" class="form-control" placeholder="Nomor Telepon">
-                        </div>
-                    </div>
-
-                    <div class="d-md-flex">
-                        <div class="form-group">
-                            <textarea cols="30" rows="2" class="form-control" placeholder="Pesan / Permintaan Khusus"></textarea>
-                        </div>
-                        <div class="form-group ml-md-4">
-                            <input type="submit" value="Pesan Sekarang" class="btn btn-white py-3 px-4">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <input type="submit" value="Pesan Sekarang" class="btn btn-warning py-3 px-4 border-2 border-light border ">
                         </div>
                     </div>
                 </form>
+                </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -182,7 +141,7 @@
 
 
 
-<section class="ftco-section">
+<section class="ftco-section" id="menu">
     <div class="container">
         <div class="row align-items-center">
 
@@ -257,7 +216,7 @@
     </div>
 </section>
 
-<section class="ftco-section">
+<section class="ftco-section" id="BestSeller">
     <div class="container">
         
         <!-- JUDUL SECTION -->
