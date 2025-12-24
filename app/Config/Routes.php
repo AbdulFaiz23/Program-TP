@@ -7,5 +7,15 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/menu', 'MenuController::index');
-$routes->get('/menu', 'MenuController::index');
 $routes->get('/menuraciksendiri', 'MenuRacikController::index');
+
+$routes->post('cart/add', 'CartController::add');
+$routes->get('cart', 'CartController::index');
+$routes->get('cart/remove/(:any)', 'CartController::remove/$1');
+
+$routes->get('cart/clear', function () {
+    session()->remove('cart');
+    return redirect()->to('/');
+});
+
+$routes->get('glass', 'GlassController::index');

@@ -228,65 +228,42 @@
             </div>
         </div>
 
-        <div class="row">
+    <div class="row">
+    <?php foreach ($bestSeller as $p): ?>
+        <div class="col-md-3">
+        <div class="menu-entry">
 
-            <!-- ITEM 1 -->
-            <div class="col-md-3">
-                <div class="menu-entry">
-                    <a href="<?= base_url('menu') ?>" class="img"
-                       style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-1.jpg') ?>);"></a>
-                    <div class="text text-center pt-4">
-                        <h3><a href="<?= base_url('menu') ?>">Kopi Joss Original</a></h3>
-                        <p>Kopi hitam panas dengan arang membara yang memberikan sensasi khas Yogyakarta.</p>
-                        <p class="price"><span>Rp 10.000</span></p>
-                        <p><a href="<?= base_url('cart/add/1') ?>" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-                    </div>
-                </div>
-            </div>
+            <a href="<?= base_url('menu') ?>"
+            class="img"
+            style="background-image:url(<?= base_url($p['image']) ?>);">
+            </a>
 
-            <!-- ITEM 2 -->
-            <div class="col-md-3">
-                <div class="menu-entry">
-                    <a href="<?= base_url('menu') ?>" class="img"
-                       style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-2.jpg') ?>);"></a>
-                    <div class="text text-center pt-4">
-                        <h3><a href="<?= base_url('menu') ?>">Kopi Susu Gula Jawa</a></h3>
-                        <p>Perpaduan kopi hitam, susu creamy, dan gula Jawa yang wangi dan lembut.</p>
-                        <p class="price"><span>Rp 14.000</span></p>
-                        <p><a href="<?= base_url('cart/add/2') ?>" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-                    </div>
-                </div>
-            </div>
+            <div class="text text-center pt-4">
+            <h3><?= esc($p['name']) ?></h3>
+            <p><?= esc($p['description']) ?></p>
 
-            <!-- ITEM 3 -->
-            <div class="col-md-3">
-                <div class="menu-entry">
-                    <a href="<?= base_url('menu') ?>" class="img"
-                       style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-3.jpg') ?>);"></a>
-                    <div class="text text-center pt-4">
-                        <h3><a href="<?= base_url('menu') ?>">Es Kopi Krim</a></h3>
-                        <p>Kopi dingin dengan balutan krim lembut, cocok dinikmati saat cuaca panas.</p>
-                        <p class="price"><span>Rp 16.000</span></p>
-                        <p><a href="<?= base_url('cart/add/3') ?>" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-                    </div>
-                </div>
-            </div>
+            <p class="price">
+                <span>Rp <?= number_format($p['price']) ?></span>
+            </p>
 
-            <!-- ITEM 4 -->
-            <div class="col-md-3">
-                <div class="menu-entry">
-                    <a href="<?= base_url('menu') ?>" class="img"
-                       style="background-image: url(<?= base_url('coffee1-gh-pages/images/menu-4.jpg') ?>);"></a>
-                    <div class="text text-center pt-4">
-                        <h3><a href="<?= base_url('menu') ?>">Kopi Coklat Spesial</a></h3>
-                        <p>Kopi dengan sentuhan coklat pekat yang manis dan menyegarkan.</p>
-                        <p class="price"><span>Rp 18.000</span></p>
-                        <p><a href="<?= base_url('cart/add/4') ?>" class="btn btn-primary btn-outline-primary">Add to Cart</a></p>
-                    </div>
-                </div>
+            <form action="<?= base_url('cart/add') ?>" method="post">
+                <input type="hidden" name="id" value="<?= $p['id'] ?>">
+                <input type="hidden" name="name" value="<?= esc($p['name']) ?>">
+                <input type="hidden" name="price" value="<?= $p['price'] ?>">
+                <input type="hidden" name="image" value="<?= $p['image'] ?>">
+
+                <button type="submit"
+                        class="btn btn-primary btn-outline-primary">
+                Add to Cart
+                </button>
+            </form>
             </div>
 
         </div>
+        </div>
+    <?php endforeach ?>
+    </div>
+
 
     </div>
 </section>

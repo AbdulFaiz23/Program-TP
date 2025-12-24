@@ -23,8 +23,8 @@
               Menu
             </a>
             <div class="dropdown-menu">
-              <a class="dropdown-item" href="<?= base_url('menu') ?>">Menu yang sudah ada</a>
-              <a class="dropdown-item" href="<?= base_url('menuraciksendiri') ?>">Menu racik sendiri</a>
+              <a class="dropdown-item" href="<?= base_url('menu') ?>">Menu Utama</a>
+              <a class="dropdown-item" href="<?= base_url('menuraciksendiri') ?>">Menu Racikan Anda</a>
             </div>
           </li>
 

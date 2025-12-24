@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Incremental Drink Loader</title>
+
+<style>
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* glass */
+.loader {
+  width: 70px;
+  height: 150px;
+  position: relative;
+  border: 2px solid #bbb6aa;
+  border-top: none;
+
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    85% 100%,
+    15% 100%
+  );
+
+  overflow: hidden;
+  background: #e4e0d7;
+}
+
+/* holds liquid layers */
+.liquid-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* individual liquid layer */
+.liquid {
+  width: 100%;
+  transition: height 0.8s ease;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="controls">
+  <button onclick="addLiquid(5, '#77d4d4')">Button A (+5%)</button>
+  <button onclick="addLiquid(10, '#f4c430')">Button B (+10%)</button>
+  <button onclick="addLiquid(15, '#eb6b3e')">Button C (+15%)</button>
+</div>
+
+<div class="loader">
+  <div class="liquid-container" id="liquids"></div>
+</div>
+
+<script>
+let currentLevel = 0;
+
+function addLiquid(amount, color) {
+  if (currentLevel >= 100) return;
+
+  if (currentLevel + amount > 100) {
+    amount = 100 - currentLevel;
+  }
+
+  currentLevel += amount;
+
+  const liquid = document.createElement("div");
+  liquid.className = "liquid";
+  liquid.style.height = "0%";          // start empty
+  liquid.style.background = color;
+
+  const container = document.getElementById("liquids");
+  container.appendChild(liquid);
+
+  // force browser to register initial height
+  liquid.offsetHeight;
+
+  // now animate to target height
+  liquid.style.height = amount + "%";
+}
+</script>
+
+
+</body>
+</html>
