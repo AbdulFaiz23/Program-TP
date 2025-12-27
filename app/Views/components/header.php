@@ -1,51 +1,69 @@
+<?php
+  $cart = session()->get('cart') ?? [];
+  $cartCount = 0;
+
+  foreach ($cart as $item) {
+      $cartCount += $item['qty'];
+  }
+?>
+
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light w-100" id="ftco-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#booking">Coffee<small>JOSS</small></a>
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="oi oi-menu"></span> Menu
+
+      <a class="navbar-brand" href="<?= base_url('/') ?>">
+        Coffee<small>JOSS</small>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
+        <span class="oi oi-menu"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          
+
           <li class="nav-item">
-            <a href="/" class="nav-link">Home</a>
+            <a href="<?= base_url('/') ?>" class="nav-link">Home</a>
           </li>
-          
+
           <li class="nav-item">
             <a href="#ourstory" class="nav-link">About</a>
-        </li>
-          <!-- DROPDOWN MENU -->
+          </li>
+
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#menu" id="menuDropdown" role="button" data-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button" data-toggle="dropdown">
               Menu
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="<?= base_url('menu') ?>">Menu Utama</a>
-              <a class="dropdown-item" href="<?= base_url('menuraciksendiri') ?>">Menu Racikan Anda</a>
+              <a class="dropdown-item" href="<?= base_url('menuraciksendiri') ?>">Menu Racikan</a>
             </div>
           </li>
 
           <li class="nav-item">
             <a href="#BestSeller" class="nav-link">Best Seller</a>
-        </li>
+          </li>
 
           <li class="nav-item">
-           <a href="<?= base_url('/') ?>#footer" class="nav-link">Contact</a>
+            <a href="<?= base_url('#footer') ?>" class="nav-link">Contact</a>
           </li>
 
-          <li class="nav-item cart">
+          <!-- CART ICON -->
+          <li class="nav-item cart position-relative">
             <a href="<?= base_url('cart') ?>" class="nav-link">
               <span class="icon icon-shopping_cart"></span>
-              <span class="bag d-flex justify-content-center align-items-center"><small>1</small></span>
+
+              <?php if ($cartCount > 0): ?>
+                <span class="badge badge-danger position-absolute"
+                      style="top: 0; right: 0; font-size: 12px;">
+                  <?= $cartCount ?>
+                </span>
+              <?php endif; ?>
             </a>
           </li>
+
         </ul>
       </div>
     </div>
   </nav>
 </header>
-
-

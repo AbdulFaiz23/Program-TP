@@ -3,48 +3,37 @@
 
 <section class="ftco-section">
   <div class="container">
-    
-    <div class="row justify-content-center mb-5 pb-3">
-      <div class="col-md-7 heading-section text-center ftco-animate">
-        <span class="subheading">Kopi Pilihan Kami</span>
-        <h2 class="mb-4">Pilih Kopi Favoritmu</h2>
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-7 text-center">
+        <h2 class="mb-4">Menu Kopi</h2>
       </div>
     </div>
 
     <div class="row">
+      <?php foreach ($products as $p): ?>
+        <div class="col-md-3 mb-4">
+          <div class="card text-center">
+            <img src="<?= base_url($p['image']) ?>" class="card-img-top" style="height:200px;object-fit:cover">
 
-    <?php foreach ($products as $p): ?>
-      <div class="col-md-3 text-center ftco-animate">
-        <div class="menu-entry">
+            <div class="card-body">
+              <h5><?= esc($p['name']) ?></h5>
+              <p>Rp <?= number_format($p['price']) ?></p>
 
-          <a class="img"
-            style="background-image:url(<?= base_url($p['image']) ?>);"></a>
+              <form action="<?= base_url('cart/add') ?>" method="post">
+                <?= csrf_field() ?>
+                <input type="hidden" name="id" value="<?= $p['id'] ?>">
+                <input type="hidden" name="name" value="<?= $p['name'] ?>">
+                <input type="hidden" name="price" value="<?= $p['price'] ?>">
+                <input type="hidden" name="image" value="<?= $p['image'] ?>">
 
-          <div class="text pt-4">
-            <h3><?= esc($p['name']) ?></h3>
-            <p><?= esc($p['description']) ?></p>
-            <p class="price">
-              <span>Rp <?= number_format($p['price']) ?></span>
-            </p>
-
-            <form action="<?= base_url('cart/add') ?>" method="post">
-              <input type="hidden" name="id" value="<?= $p['id'] ?>">
-              <input type="hidden" name="name" value="<?= esc($p['name']) ?>">
-              <input type="hidden" name="price" value="<?= $p['price'] ?>">
-              <input type="hidden" name="image" value="<?= $p['image'] ?>">
-
-              <button type="submit"
-                      class="btn btn-primary btn-outline-primary">
-                Tambah
-              </button>
-            </form>
-
+                <button class="btn btn-primary btn-sm">Tambah</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    <?php endforeach ?>
+      <?php endforeach ?>
+    </div>
   </div>
 </section>
-
 
 <?= $this->endSection() ?>
